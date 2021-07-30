@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script src="mouse.js"></script>
+    <script defer src="intro.js"></script>
+    <script defer src="anime.min.js"></script>
+    <script defer src="words.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>PORTFOLIO</title>
+</head>
+<body>
+  <main id="swup" class="transition-fade">
+    <style type="text/css">
+      @import url("home.css");
+    </style>
+    <nav class="navbar navbar-expand-md  navbar-dark">
+        <a href="#" class="navbar-brand">
+        <span>DMR</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <text><span class="navbar-toggler-icon"></span></text>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link border-gradient border-gradient-purple" href="/index.html"><span class="span">HOME</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-gradient border-gradient-purple" href="/myworks.html"><span class="span">WORKS</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-gradient border-gradient-purple" href="/contactme.html"><span class="span">CONTACT ME</span></a>
+            </li> 
+          </ul>
+        </div>  
+      </nav>
+      <br>
+        <section>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="smalltext">Hello</div>
+              <div class="largetext"> I'am Tushar</div>
+              <div class="mediumtext">I'm a Web Developer</div>
+            <p>
+                I Love to code things from scratch, and enjoy bringing ideas to life in the browser.
+                I value simple content structure, clean design patterns, and thoughtful interactions.
+                <br> Languages I speak are
+                HTML,CSS,Javascript,Php And few animation libraries like GASP and Anime.js
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            </div>
+            <div class="col-md-6">
+              <div class="wrap">
+                <div class="cube">
+                <img src="https://hackr.io/tutorials/learn-css/logo/logo-css?ver=1587721903" alt="CSS">
+                <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/012011/html5_logo-01.png?itok=QI7YkgRQ" alt="HTML">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/002/771/437/small/js-logo-monogram-with-negative-space-style-design-template-free-vector.jpg" alt="JS">
+                <img src="https://equestsolutions.net/wp-content/uploads/2014/08/php-logo.jpg" style="width: 200px; height: 200px;" alt="PHP">
+                <img src="https://img.stackshare.io/service/3767/greensock-logo-300x300.png" alt="GSAP">
+                <img src="data:image/jpeg;base64,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" alt="bootstrap">
+                </div>
+              </div>
+            </div>
+            <br><br><br>    <br><br><br>    <br><br><br>      
+  </section>
+  <script defer src="swup.js"></script>
+      </main>
+      <div class="intro">
+        <div class="intro-text">
+          <div class="hide">
+            <div class="quote">WELCOME&nbspTO&nbspMY&nbspPORTFOLIO</span>
+          </div>
+        </div>
+      <div class="slider"></div> 
+    </div>  
+    </div> 
+</body>
+</html>

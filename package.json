@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "R Tushar",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "swup": "^2.0.14"
+  }
+}

@@ -1,0 +1,152 @@
+
+  .slider {
+    background-color: rgba(233, 190, 190, 0.048);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+
+  
+.intro {
+    background-color: rgb(250, 248, 248);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .intro-text {
+    color: rgb(233,233,233);
+    font-size: clamp(1.25rem , 5vw , 4rem);
+  }
+
+  .quote {
+    position: relative;
+    color: #161623;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below -0.06em linear-gradient(transparent,#000400);
+  }
+
+
+  .smalltext {
+    padding-top: 5vh;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .largetext {
+    font-weight: 600;
+    font-size: clamp(1.5rem,25vw,3rem);
+    color: white;
+  }
+
+  .mediumtext {
+    font-weight: 300;
+    font-size: clamp(1rem,10vw,1.5rem);
+    color: white;
+  }
+
+  section {
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0,0,0.5);
+    margin-bottom: 100px;
+  }
+
+
+  p {
+    color: white;
+    font-size: clamp(0.2rem,20vw,1.5rem);
+    z-index: 2;
+    letter-spacing: 2px;
+    
+  
+    animation-name: brightness;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+
+  }
+  
+  @keyframes brightness {
+    0% {
+      filter: brightness(200%);
+    }
+    50% {
+      filter: brightness(100%);
+    }
+    100% {
+      filter: brightness(200%);
+    }
+}
+
+.wrap {
+  margin-top: 150px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+.cube {
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+}
+
+.cube img {
+  position: absolute;
+  opacity: 0.;
+}
+
+.cube img:nth-child(1) {
+  transform: rotateY(0deg) translateZ(100px);
+}
+
+.cube img:nth-child(2) {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube img:nth-child(3) {
+  transform: rotateX(180deg) translateZ(100px);
+}
+
+.cube img:nth-child(4) {
+  transform: rotateX(-270deg) translateZ(100px);
+}
+
+.cube img:nth-child(5) {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cube img:nth-child(6) {
+  transform: rotateY(270deg) translateZ(100px);
+}
+
+@keyframes loop {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.cube {
+  animation: loop 10s linear infinite ;
+}
