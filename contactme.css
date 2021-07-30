@@ -122,6 +122,18 @@ section {
         margin-top: 5vh;
     }
  }
+ @media (max-height: 450px) and (min-height: 400px){
+    section {
+        margin-top: 3vh;
+    }
+ }
+ @media (max-height: 400px) and (min-height: 350px){
+    section {
+        margin-bottom: -30px;
+    }
+ }
+
+ 
 
  @media (min-width:1200px) {
     #sociallinks {
