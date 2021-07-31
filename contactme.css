@@ -57,93 +57,10 @@ section {
     align-items: center;
 }
 
-@media (max-height: 1200px) and (min-height: 1100px){
-    section {
-        margin-top: 33vh;
-    }
- }
-@media (max-height: 1100px) and (min-height: 1010px){
-    section {
-        margin-top: 30vh;
-    }
- }
-@media (max-height: 1010px) and (min-height: 950px){
-    section {
-        margin-top: 28vh;
-    }
- }
-@media (max-height: 950px) and (min-height: 900px){
-    section {
-        margin-top: 28vh;
-    }
- }
- @media (max-height: 900px) and (min-height: 850px){
-    section {
-        margin-top: 26vh;
-    }
- }
- @media (max-height: 850px) and (min-height: 800px){
-    section {
-        margin-top: 25vh;
-    }
- }
- @media (max-height: 800px) and (min-height: 750px){
-    section {
-        margin-top: 24vh;
-    }
- }
- @media (max-height: 750px) and (min-height: 700px){
-    section {
-        margin-top: 22vh;
-    }
- }
- @media (max-height: 700px) and (min-height: 650px){
-    section {
-        margin-top: 20vh;
-    }
- }
- @media (max-height: 650px) and (min-height: 600px){
-    section {
-        margin-top: 16vh;
-    }
- }
- @media (max-height: 600px) and (min-height: 550px){
-    section {
-        margin-top: 14vh;
-    }
- }
- @media (max-height: 550px) and (min-height: 500px){
-    section {
-        margin-top: 10vh;
-    }
- }
- @media (max-height: 500px) and (min-height: 450px){
-    section {
-        margin-top: 5vh;
-    }
- }
- @media (max-height: 450px) and (min-height: 400px){
-    section {
-        margin-top: 3vh;
-    }
- }
- @media (max-height: 400px) and (min-height: 350px){
-    section {
-        margin-bottom: -30px;
-    }
- }
- @media only screen and (-webkit-min-device-pixel-ratio: 2.75) {
-     section {
-        margin-top: 17vh;
-     }
-}
- 
-
- @media (min-width:1200px) {
-    #sociallinks {
-        margin-right: 10vw;
-    }
- }
+#sociallinks {
+    position: absolute;
+    top: 45%;
+} 
 
  #particles-js {
     width: 100%;
