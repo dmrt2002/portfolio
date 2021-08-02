@@ -59,7 +59,7 @@ section {
 
 #sociallinks {
     position: absolute;
-     top: clamp(36%,40%,53%);
+     top: clamp(36%,41%,53%);
 } 
 
  #particles-js {
