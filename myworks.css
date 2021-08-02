@@ -9,16 +9,18 @@
     padding-top: 5vh;
 }
 
-.container .cards {
+.cards1, .cards2 , .cards3 {
     width: 300px;
     height: 400px;
     background: rgba(255,255,255,0.05);
-    box-shadow:  15px 35px rgba(0,0,0,0.2);
     border-radius: 15px;
     backdrop-filter: blur(10px);
+    padding: 16rem 0 0;
+    transition: 0.5s;
+    max-width: 35ch;
 }
 
-.container .cards .content {
+.content {
 
  opacity: 0.5;
  transition: 0.5;
@@ -43,6 +45,7 @@
     }
   }
   
+  
   h1 {
       z-index: 100;
   }
@@ -52,33 +55,33 @@
       width: 300px;
   }
 
-  .calci {
-      background: url(calci.jpeg);
+  .cards2 {
+      background-image: url(calci.jpeg);
       background-repeat: no-repeat;
       background-size: cover;
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: rgba(0, 0, 0, 0.7);
       background-blend-mode: overlay;
   }
 
-  .cafe {
-    background: url(cafe.jpeg);
+  .cards1 {
+    background-image: url(cafe.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
   }
 
-  .tic {
+  .cards3 {
     background: url(tic-tac-toe.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
   }
 
   button {
     background: none;
-    border: 2px solid;
+    border: 2px solid #2196f3;
     font: inherit;
     line-height: 1;
     margin: 0.5em;
@@ -113,4 +116,91 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.name {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+  position: relative;
+  text-align: center;
+}
+
+.name::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  width: 60%;
+  background-color: blue;
+  margin-left: 10px;
+  margin-top: 20px;
+  transform: scaleX(0);
+  transition: transform 500ms ease;
+  transform-origin: left;
+}
+
+.text {
+  font-size: 0.8rem;
+  color: rgb(241, 241, 247);
+  margin-left: 20px;
+  text-align: center;
+}
+
+.content8x {
+  background: rgba(0,0,0,0.2);
+}
+
+#cards:hover .name::after {
+  transform: scaleX(1);
+}
+@media only screen   
+and (min-width : 768px)   
+and (max-width : 1366px)  
+{ 
+  .text {
+       opacity: 0;
+  }
+  .name {
+    transform: translateY(60px);
+  }
+  #cards:hover .text {
+    animation-name: hovereffect;
+    animation-duration: 500ms;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    text-align: left;
+  }
+
+  #cards:hover .name {
+    transform: translateY(-10px);
+    transition: transform 500ms ease-in;
+    text-align: left;
+    padding-left: 20px;
+    animation-name: leftalign;
+    animation-duration: 600ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+}  
+
+@keyframes hovereffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 10;
+  }
+}
+
+@keyframes leftalign {
+  from {
+    padding-left: 100px;
+  }
+  to {
+    padding-left: 20px;
+  }
 }
