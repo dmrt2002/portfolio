@@ -59,24 +59,27 @@
       background-image: url(calci.jpeg);
       background-repeat: no-repeat;
       background-size: cover;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.5);
       background-blend-mode: overlay;
+      z-index: -1;
   }
 
   .cards1 {
     background-image: url(cafe.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
+    z-index: -1;
   }
 
   .cards3 {
     background: url(tic-tac-toe.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
+    z-index: -1;
   }
 
   button {
@@ -101,7 +104,7 @@
     --color: #ffa260;
     --hover: #e5ff60;
     color: white;
-    font-weight: 800;
+    font-weight: 1200;
   }
 
   .raise:hover,
@@ -125,6 +128,7 @@
   font-weight: 900;
   position: relative;
   text-align: center;
+  z-index: 10;
 }
 
 .name::after {
@@ -147,6 +151,8 @@
   color: rgb(241, 241, 247);
   margin-left: 20px;
   text-align: center;
+  font-weight: 750;
+  z-index: 10;
 }
 
 .content8x {
@@ -202,5 +208,11 @@ and (max-width : 1366px)
   }
   to {
     padding-left: 20px;
+  }
+}
+
+@media (max-width:768px) {
+  .name::after {
+    left: 55px;
   }
 }
